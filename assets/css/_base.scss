@@ -1,13 +1,13 @@
 *,
 *::before,
-*::after{
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 html,
-body{
+body {
     background-color: $veryLightGrayishBlue;
     font-size: $baseFontSize;
     line-height: 1.1;
@@ -16,23 +16,28 @@ body{
     color: $darkGrayishBlue;
 }
 
-.container{
+.container {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-.btn{
+.btn {
     display: inline-block;
     outline: none;
     background-color: transparent;
     border: none;
 
-    &-text{
+    &-text {
         color: $darkGrayishBlue;
         font-weight: 500;
         cursor: pointer;
-        &:hover{
+
+        &:hover {
             color: $blueColor;
         }
     }
+}
+
+a {
+    text-decoration: none;
 }

@@ -40,6 +40,10 @@ body {
   color: #0a317b;
 }
 
+a {
+  text-decoration: none;
+}
+
 .notification {
   margin: 4rem auto 5rem;
   background-color: white;
