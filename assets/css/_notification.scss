@@ -1,0 +1,140 @@
+.notification {
+    margin: 4rem auto 5rem;
+    background-color: $whiteColor;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 0px 0px 10 4 rgba(0, 0, 0, .3);
+    border-radius: 10;
+
+    @include breakpoint-down() {
+        margin: 0 auto;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: .75rem;
+        color: $veryDarkBlue;
+    }
+
+    &__badge {
+        background-color: $blueColor;
+        color: $whiteColor;
+        width: 28px;
+        height: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        font-size: .9rem;
+    }
+
+    &__card {
+        padding: .5rem 1rem;
+        background-color: $veryLightGrayishBlue;
+        border-radius: $borderRadius;
+
+
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 1rem;
+
+        margin-bottom: .5rem;
+
+        &.read {
+            background-color: $whiteColor;
+        }
+    }
+
+    &__box {
+        flex: 1;
+    }
+
+    &__text {
+        color: $darkGrayishBlue;
+        margin-bottom: .4rem;
+        width: 100%;
+
+        &-user {
+            font-weight: 800;
+            color: $veryDarkBlue;
+            cursor: pointer;
+
+            &:hover {
+                color: $blueColor;
+            }
+        }
+
+        &-link {
+            font-weight: 800;
+            color: $darkGrayishBlue;
+            cursor: pointer;
+
+            &:hover {
+                color: $blueColor;
+            }
+        }
+
+        &-unread {
+            width: 8px;
+            height: 8px;
+            background-color: $redColor;
+            display: inline-block;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-left: .2rem;
+        }
+    }
+
+    &__time {
+        color: $grayishBlue;
+        font-size: .75rem;
+        font-weight: 500;
+    }
+
+    &__image {
+
+        img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    }
+
+    &__avatar {
+        align-self: flex-start !important;
+    }
+
+    &__message {
+        margin-top: .5rem;
+        padding: 1rem 1rem;
+        border-radius: $borderRadius;
+        line-height: 1.2;
+        border: 1px solid $lightGrayishBlueTwo;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $lightGrayishBlueTwo;
+        }
+    }
+
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+}

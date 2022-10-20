@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: $veryLightGrayishBlue;
+    font-size: $baseFontSize;
+    line-height: 1.1;
+    font-family: $fontFamily;
+    font-weight: 500;
+    color: $darkGrayishBlue;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.btn{
+    display: inline-block;
+    outline: none;
+    background-color: transparent;
+    border: none;
+
+    &-text{
+        color: $darkGrayishBlue;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover{
+            color: $blueColor;
+        }
+    }
+}

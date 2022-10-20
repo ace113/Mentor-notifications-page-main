@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #f7fafd;
+  font-size: 0.9rem;
+  line-height: 1.1;
+  font-family: "Plus Jakarta Sans", "Open Sans";
+  font-weight: 500;
+  color: #5e6778;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-text {
+  color: #5e6778;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-text:hover {
+  color: #0a317b;
+}
+
+.notification {
+  margin: 4rem auto 5rem;
+  background-color: white;
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 0px 10 4 rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10 4 rgba(0, 0, 0, 0.3);
+  border-radius: 10;
+}
+
+@media (max-width: 376px) {
+  .notification {
+    margin: 0 auto;
+  }
+}
+
+.notification__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.notification__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: .75rem;
+  color: #1c202b;
+}
+
+.notification__badge {
+  background-color: #0a317b;
+  color: white;
+  width: 28px;
+  height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  font-size: .9rem;
+}
+
+.notification__card {
+  padding: .5rem 1rem;
+  background-color: #f7fafd;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin-bottom: .5rem;
+}
+
+.notification__card.read {
+  background-color: white;
+}
+
+.notification__box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.notification__text {
+  color: #5e6778;
+  margin-bottom: .4rem;
+  width: 100%;
+}
+
+.notification__text-user {
+  font-weight: 800;
+  color: #1c202b;
+  cursor: pointer;
+}
+
+.notification__text-user:hover {
+  color: #0a317b;
+}
+
+.notification__text-link {
+  font-weight: 800;
+  color: #5e6778;
+  cursor: pointer;
+}
+
+.notification__text-link:hover {
+  color: #0a317b;
+}
+
+.notification__text-unread {
+  width: 8px;
+  height: 8px;
+  background-color: #f65351;
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: .2rem;
+}
+
+.notification__time {
+  color: #939dae;
+  font-size: .75rem;
+  font-weight: 500;
+}
+
+.notification__image img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.notification__avatar {
+  -ms-flex-item-align: start !important;
+      align-self: flex-start !important;
+}
+
+.notification__message {
+  margin-top: .5rem;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  line-height: 1.2;
+  border: 1px solid #dde7ee;
+  cursor: pointer;
+}
+
+.notification__message:hover {
+  background-color: #dde7ee;
+}
+
+.notification .avatar {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=main.css.map */
